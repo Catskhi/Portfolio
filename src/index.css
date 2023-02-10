@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .showAnimation {
+        animation: scroll-down 1s ease-out;
+        animation-fill-mode: both;
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scroll-down {
+    from {
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(0)
+    }
+}

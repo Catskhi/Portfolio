@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { SectionTitle } from "../Sections/SectionTitle";
 
 import 'swiper/css';
-import { SliderTitle } from './SliderTitles';
+import { Project } from './Project';
 
 export function Projects() {
     return (
@@ -11,36 +11,22 @@ export function Projects() {
             pb-10
         `}>
             <SectionTitle title="Projects" />
-            <Swiper className='
-                px-2 rounded-lg
-                md:px-20
-            '
-                spaceBetween={100}
-                slidesPerView={1}
-                onSlideChange={() => console.log('slide change')}
-            >
-                <SwiperSlide className='cursor-grab'>
-                    <SliderTitle title='React ToDo App' />
-                    <div
-                    className='h-44 w-[100%] bg-cover bg-no-repeat bg-center 
-                        cursor-pointer
-                        md:m-auto
-                        md:h-[500px] 
-                        md:w-[80%]
-                        rounded-[20px]
-                    '
-                    style={{
-                        backgroundImage : 'url(https://user-images.githubusercontent.com/79881605/211411273-30766a6a-8562-4053-ae12-cb78945ba1a2.png)'
-                    }}>
-
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <h1>oi</h1>
-                </SwiperSlide>
-
-            </Swiper>
+            <div className={` grid grid-cols-1
+                lg:grid-cols-2
+            `}>
+                <Project
+                className='bg-top'
+                firstLink='https://catskhi.github.io/react-todo-app/'
+                secondLink='https://github.com/Catskhi/react-todo-app'
+                title='React ToDo App'
+                backgroundImage='https://user-images.githubusercontent.com/79881605/211411273-30766a6a-8562-4053-ae12-cb78945ba1a2.png' />
+                <Project
+                className='bg-center'
+                firstLink='https://catskhi-react-weather-app.vercel.app/'
+                secondLink='https://github.com/Catskhi/react-weather-app'
+                title='React Weather App'
+                backgroundImage='https://user-images.githubusercontent.com/79881605/212966147-cd3badfd-f3ba-4c45-85ac-e7567c3a4d15.png' />
+            </div>
         </div>
     )
 }

@@ -18,6 +18,7 @@ export function ThemeButton() {
             md:right-16
             md:top-8
             hover:cursor-pointer
+            z-[2]
         ` + buttonClassName}>
             <i onClick={() => setDarkMode(!darkMode)} className={darkMode ? `bi bi-moon-fill` : `bi bi-brightness-high-fill`}></i>
         </div>

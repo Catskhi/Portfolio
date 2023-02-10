@@ -6,10 +6,10 @@ export function MessageText() {
     return(
         <div className={`
             mt-6 text-center
-            text-2xl
-            md:text-4xl
-            md:ml-8
-            md:mt-0
+            text-3xl
+            lg:text-5xl
+            lg:ml-8
+            lg:mt-0
             
             transition-all duration-300
         `}>
@@ -19,10 +19,10 @@ export function MessageText() {
                     bg-gradient-to-r from-cyan-400
                     to-emerald-500
                 "
-                >{' <Enzo Pablo/>'}</span>
+                >{' <Enzo-Pablo/>'}</span>
             </h1>
-            <h2 className={`text-xl
-                md:text-3xl
+            <h2 className={`text-2xl
+                lg:text-4xl
                 transition-all duration-300
             `}
             >Front-end Developer</h2>

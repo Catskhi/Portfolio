@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { darkModeAtom } from "../Atoms/ThemeManager";
 import { MessageText } from "./MessageText";
 import { ProfilePicture } from "./ProfilePicture";
+import { ReactRotating } from "./ReactRotating";
+import { SocialButtons } from "./SocialButtons/SocialButtons";
 import { ThemeButton } from "./Theme/ThemeButton";
 
 export function Header() {
@@ -12,20 +14,24 @@ export function Header() {
     const [backgroundClass, setBackgroundColor] = useState<string>('')
     
     useEffect(() => {
-        setBackgroundColor(darkMode ? 'bg-zinc-800' : 'bg-white' )
+        setBackgroundColor(darkMode ? 'bg-zinc-100' : 'bg-white' )
     }, [darkMode])
 
     return (
-        <div>
-            <div className={`w-full h-96 
+        <header>
+            <div className={`w-full lg:h-screen h-screen
             flex flex-col 
-            md:flex 
-            md:flex-row items-center 
+            lg:flex 
+            lg:flex-row items-center justify-center
             `}>
                 <ThemeButton />
                 <ProfilePicture />
-                <MessageText />
+                <div className="grid grid-cols-1">
+                    <MessageText />
+                    <SocialButtons />
+                </div>
+                <ReactRotating />
             </div>
-        </div>
+        </header>
     )
 }
