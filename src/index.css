@@ -4,7 +4,7 @@
 
 @layer components {
     .showAnimation {
-        animation: scroll-down 1s ease-out;
+        animation: scroll-down 0.8s ease-out;
         animation-fill-mode: both;
         transform: translateX(-100%);
     }
@@ -12,9 +12,11 @@
 
 @keyframes scroll-down {
     from {
-        transform: translateX(-100%)
+        opacity: 0;
+        transform: translateX(-10%)
     }
     to {
+        opacity: 100;
         transform: translateX(0)
     }
 }

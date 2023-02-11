@@ -3,8 +3,14 @@ import { SectionTitle } from "../Sections/SectionTitle";
 
 import 'swiper/css';
 import { Project } from './Project';
+import { DiReact } from 'react-icons/di';
+import { SiTypescript } from 'react-icons/si';
+import { SiTailwindcss } from 'react-icons/si'
 
 export function Projects() {
+
+    const iconsClass : string = 'h-6 w-6 mx-2'
+
     return (
         <div className={`
             w-full h-auto
@@ -19,13 +25,35 @@ export function Projects() {
                 firstLink='https://catskhi.github.io/react-todo-app/'
                 secondLink='https://github.com/Catskhi/react-todo-app'
                 title='React ToDo App'
-                backgroundImage='https://user-images.githubusercontent.com/79881605/211411273-30766a6a-8562-4053-ae12-cb78945ba1a2.png' />
+                backgroundImage='/public/Project-1.png'
+                techIcons={[
+                    <DiReact className={iconsClass} />,
+                    <SiTypescript className={iconsClass} />
+                ]}
+                />
                 <Project
                 className='bg-center'
                 firstLink='https://catskhi-react-weather-app.vercel.app/'
                 secondLink='https://github.com/Catskhi/react-weather-app'
                 title='React Weather App'
-                backgroundImage='https://user-images.githubusercontent.com/79881605/212966147-cd3badfd-f3ba-4c45-85ac-e7567c3a4d15.png' />
+                backgroundImage='/public/Project-2.png'
+                techIcons={[
+                    <DiReact className={iconsClass} />,
+                    <SiTypescript className={iconsClass} />
+                ]}
+                />
+                <Project
+                className='bg-center'
+                firstLink='https://reatix-movie-app.vercel.app/'
+                secondLink='https://github.com/Catskhi/Reatix-Movie-App'
+                title='React Movie App'
+                backgroundImage='/public/Project-3.png'
+                techIcons={[
+                    <DiReact className={iconsClass} />,
+                    <SiTypescript className={iconsClass} />,
+                    <SiTailwindcss className={iconsClass} />
+                ]}
+                />
             </div>
         </div>
     )
