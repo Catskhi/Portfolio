@@ -12,7 +12,7 @@ export function ReactRotating() {
                 
                 animate-rotation
                 
-            " src="/public/React-icon.svg"></img>
+            " src="/React-icon.svg"></img>
         </div>
     )
 }

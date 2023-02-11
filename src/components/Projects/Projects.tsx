@@ -25,7 +25,7 @@ export function Projects() {
                 firstLink='https://catskhi.github.io/react-todo-app/'
                 secondLink='https://github.com/Catskhi/react-todo-app'
                 title='React ToDo App'
-                backgroundImage='/public/Project-1.png'
+                backgroundImage='/Project-1.png'
                 techIcons={[
                     <DiReact className={iconsClass} />,
                     <SiTypescript className={iconsClass} />
@@ -36,7 +36,7 @@ export function Projects() {
                 firstLink='https://catskhi-react-weather-app.vercel.app/'
                 secondLink='https://github.com/Catskhi/react-weather-app'
                 title='React Weather App'
-                backgroundImage='/public/Project-2.png'
+                backgroundImage='/Project-2.png'
                 techIcons={[
                     <DiReact className={iconsClass} />,
                     <SiTypescript className={iconsClass} />
@@ -47,7 +47,7 @@ export function Projects() {
                 firstLink='https://reatix-movie-app.vercel.app/'
                 secondLink='https://github.com/Catskhi/Reatix-Movie-App'
                 title='React Movie App'
-                backgroundImage='/public/Project-3.png'
+                backgroundImage='/Project-3.png'
                 techIcons={[
                     <DiReact className={iconsClass} />,
                     <SiTypescript className={iconsClass} />,

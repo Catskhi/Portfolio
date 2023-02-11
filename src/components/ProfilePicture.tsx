@@ -10,7 +10,7 @@ export function ProfilePicture() {
             transition-all duration-300
         '
         style={{
-            backgroundImage: 'url(src/assets/Foto_de_perfil2.png)'
+            backgroundImage: 'url(/Foto_de_perfil2.png)'
         }}>
             
         </div>
