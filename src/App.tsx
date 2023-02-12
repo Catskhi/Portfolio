@@ -26,7 +26,6 @@ function App() {
     `}>
       <Header />
       <About />
-      {/* <Skills /> */}
       <Projects />
     </div>
   )

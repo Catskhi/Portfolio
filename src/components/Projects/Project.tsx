@@ -57,6 +57,7 @@ export function Project({backgroundImage, title, firstLink, secondLink, classNam
                         flex items-center text-lg 
                         drop-shadow-lg
                         pt-4 m-auto
+                        sm:w-[70%]
                         md:w-[75%]
                     `}>
                         <h3>Techs: </h3>

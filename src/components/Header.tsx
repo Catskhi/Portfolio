@@ -1,6 +1,7 @@
 import { useAtom } from "jotai";
 import { useEffect, useState } from "react";
 import { darkModeAtom } from "../Atoms/ThemeManager";
+import LanguageButton from "./language/LanguageButton";
 import { MessageText } from "./MessageText";
 import { ProfilePicture } from "./ProfilePicture";
 import { ReactRotating } from "./ReactRotating";

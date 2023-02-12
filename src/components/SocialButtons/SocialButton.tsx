@@ -2,16 +2,18 @@ interface SocialButtonProps {
     link : string,
     className : string,
     text : string,
-    buttonClass : string
+    buttonClass : string,
+    download ?: string
 }
 
 export function SocialButton({
-    link, className, text, buttonClass
+    link, className, text, buttonClass, download
     } : SocialButtonProps) {
     return (
         <a 
         href={link}
         target={'_blank'}
+        download={download}
         className={` rounded-lg p-1 bg-animat
             font-bold
             cursor-pointer
